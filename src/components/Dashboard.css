@@ -1,0 +1,180 @@
+/* Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .counter-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .counter-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .counter-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .counter-value h3 {
+    font-size: 1rem;
+    color: #757575;
+    margin-bottom: 0.5rem;
+  }
+  
+  .count {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3949ab;
+  }
+  
+  .counter-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .counter-button {
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 120px;
+  }
+  
+  .counter-button.increment {
+    background-color: #43a047;
+    color: white;
+  }
+  
+  .counter-button.increment:hover {
+    background-color: #388e3c;
+  }
+  
+  .counter-button.decrement {
+    background-color: #fb8c00;
+    color: white;
+  }
+  
+  .counter-button.decrement:hover {
+    background-color: #f57c00;
+  }
+  
+  .counter-button.reset {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .counter-button.reset:hover {
+    background-color: #d32f2f;
+  }
+  
+  .counter-button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+  }
+  
+  .connect-prompt {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #616161;
+  }
+  
+  .error-message {
+    color: #f44336;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .loading-spinner {
+    margin: 1rem 0;
+    color: #3949ab;
+    font-style: italic;
+  }
+  
+  .transaction-info {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .transaction-info a {
+    color: #3949ab;
+    text-decoration: none;
+    font-family: monospace;
+    margin-left: 0.5rem;
+  }
+  
+  .transaction-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .transaction-history {
+    margin-top: 2rem;
+    border-top: 1px solid #eaeaea;
+    padding-top: 1rem;
+  }
+  
+  .transaction-history h3 {
+    font-size: 1rem;
+    color: #757575;
+    margin-bottom: 0.75rem;
+  }
+  
+  .transaction-history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 0.85rem;
+  }
+  
+  .tx-action {
+    text-transform: capitalize;
+    font-weight: 500;
+    flex: 1;
+  }
+  
+  .tx-time {
+    color: #757575;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .tx-hash {
+    font-family: monospace;
+    color: #3949ab;
+    text-decoration: none;
+    flex: 1;
+    text-align: right;
+  }
+  
+  .tx-hash:hover {
+    text-decoration: underline;
+  }
